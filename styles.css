@@ -1,0 +1,257 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+   font-family: "Arial", sans-serif;
+    background-color: #FDF5E6;
+   color: #8b5a2b;
+   line-height: 1.6;
+   padding: 0;
+}
+
+#header-img {
+ width: 100px;
+ height: 100px;
+
+}
+
+header {
+ position: fixed;
+   top: 0;
+   margin: 0;
+  width: 100%;
+   padding: 0px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #f5deb3;
+   border-bottom: 3px solid #8b5a2b;  /* Темно-коричневая нижняя граница */
+   z-index: 1000; 
+}
+
+
+
+#nav-bar {
+   margin: 0;
+  
+ height: 100px;
+
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #f5deb3;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+#nav-bar ul {
+   list-style: none; /* Убираем маркеры у списка */
+   padding: 0;
+   margin: 0;
+   display: flex; /* Используем flex для расположения пунктов в ряд */
+   justify-content: center; /* Центрируем пункты по горизонтали */
+   flex-grow: 1;
+}
+
+#nav-bar .nav-link {
+   margin: 0 20px; /* Отступы между пунктами */
+   color: #8b5a2b; /* Белый цвет текста */
+   font-size: 18px; /* Размер шрифта */
+   cursor: pointer; /* Курсор в виде указателя */
+   text-transform: uppercase; /* Все буквы заглавные */
+   transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+#nav-bar .nav-link:hover {
+    color: #800020; /*  цвет при наведении */
+}
+
+#hero {
+   display: flex;
+   justify-content: center; /* Центрирует по горизонтали */
+   align-items: center;     /* Центрирует по вертикали */
+   height: 100vh;           /* Задаем высоту секции, чтобы она занимала всю видимую область */
+   flex-direction: column;  /* Чтобы все элементы (заголовок и форма) располагались вертикально */
+   text-align: center;      /* Выравниваем текст по центру */
+  
+  
+
+}
+
+/* Стили для формы */
+#form {
+   display: flex;
+   flex-direction: column;   /* Размещаем элементы формы вертикально */
+   align-items: center;      /* Центрируем элементы формы */
+    /* Белый фон для формы */
+   padding: 20px;            /* Отступы вокруг формы */
+   border-radius: 8px;       /* Скругляем углы */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+   width: 100%;
+   max-width: 400px;         /* Ограничиваем максимальную ширину формы */
+}
+
+/* Стили для поля ввода */
+.input__control {
+   padding: 10px;
+   margin: 10px 0;
+   width: 100%; /* Поле будет занимать всю доступную ширину */
+   max-width: 300px; /* Ограничиваем максимальную ширину поля */
+   border: 1px solid #8b5a2b;
+   border-radius: 4px;
+   
+}
+
+/* Стили для кнопки */
+#submit {
+   padding: 10px 20px;
+   background-color: #8b5a2b; /* Оранжевый цвет */
+   border: none;
+   border-radius: 4px;
+   color: white;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+   background-color: #d88f00; /* Темный оранжевый при наведении */
+}
+
+h2 {
+ color: #d88f00;
+}
+
+h4 {
+  color:  #079874; 
+}
+
+p {
+ color:  #8b5a2b; 
+}
+
+#email {
+ color: #8b5a2b; 
+}
+
+#why-us {
+   display: flex;
+   flex-direction: column;  /* Элементы располагаются вертикально */
+   align-items: center;     /* Центрирует содержимое по горизонтали */
+   text-align: center;      /* Выравнивает текст внутри секции */
+   width: 80%;              /* Устанавливает ширину секции (можно изменить) */
+   margin: 0 auto;          /* Центрирует секцию по горизонтали */
+   padding: 20px 0;         /* Добавляет отступы сверху и снизу */
+   
+}
+
+#why-us ul {
+ list-style: none;
+}
+
+#video {
+   margin-top: 30px; /* Добавляет расстояние перед видео */
+}
+
+#collection {
+   margin-top: 60px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+#product1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+   width: calc(100% / 3);
+   margin: 10px;
+   border: 1px solid #000;
+   border-radius: 3px;
+   margin-bottom: 20px;
+   padding: 10px;
+   gap: 20px;
+}
+
+#product2 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+   width: calc(100% / 3);
+   margin: 10px;
+   border: 1px solid #000;
+   border-radius: 3px;
+   margin-bottom: 20px;
+   padding: 10px;
+   gap: 20px;
+}
+
+#product3 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+   width: calc(100% / 3);
+   margin: 10px;
+   border: 1px solid #000;
+   border-radius: 3px;
+   margin-bottom: 20px;
+   padding: 10px;
+   gap: 20px;
+}
+
+.product-image {
+ width: 100px;
+}
+
+footer {
+   margin-top: 30px;
+   background-color: #8b5a2b;
+   padding: 20px;
+   color: #f5deb3;
+}
+
+footer > ul {
+   display: flex;
+   justify-content: flex-end;
+   gap: 10px;
+    list-style: none; 
+}
+
+#contact {
+color: #f5deb3;
+}
+
+a {
+color: #f5deb3;
+}
+
+span {
+display: flex;
+   justify-content: flex-end;
+   color: white;
+   font-size: 10px;
+}
+
+@media (max-width: 768px) {
+   #nav-bar ul {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   #header {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   .logo img {
+       max-width: 80px;
+   }
+}
