@@ -6,8 +6,8 @@
 body {
   width: 100%;
    font-family: "Arial", sans-serif;
-    background-color: #FDF5E6;
-   color: #8b5a2b;
+    background-color: #AA5656;
+   color: #AA5656;
    line-height: 1.6;
    padding: 0;
 }
@@ -27,8 +27,8 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: #f5deb3;
-   border-bottom: 3px solid #8b5a2b;  /* Темно-коричневая нижняя граница */
+   background-color: #f5deb4;
+   border-bottom: 3px solid #AA5656;  /* Темно-коричневая нижняя граница */
    z-index: 1000; 
 }
 
@@ -42,7 +42,7 @@ header {
    top: 0;
    left: 0;
    width: 100%;
-   background-color: #f5deb3;
+   background-color: #f5deb4;
    padding: 10px 20px;
    display: flex;
    justify-content: space-between;
@@ -57,19 +57,21 @@ header {
    display: flex; /* Используем flex для расположения пунктов в ряд */
    justify-content: center; /* Центрируем пункты по горизонтали */
    flex-grow: 1;
+   
 }
 
 #nav-bar .nav-link {
    margin: 0 20px; /* Отступы между пунктами */
-   color: #8b5a2b; /* Белый цвет текста */
+   color: #AA5656; /* Белый цвет текста */
    font-size: 18px; /* Размер шрифта */
    cursor: pointer; /* Курсор в виде указателя */
    text-transform: uppercase; /* Все буквы заглавные */
    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+   text-decoration: none;
 }
 
 #nav-bar .nav-link:hover {
-    color: #800020; /*  цвет при наведении */
+    color: #698269; /*  цвет при наведении */
 }
 
 #hero {
@@ -103,7 +105,7 @@ header {
    margin: 10px 0;
    width: 100%; /* Поле будет занимать всю доступную ширину */
    max-width: 300px; /* Ограничиваем максимальную ширину поля */
-   border: 1px solid #8b5a2b;
+   border: 1px solid white;
    border-radius: 4px;
    
 }
@@ -111,7 +113,7 @@ header {
 /* Стили для кнопки */
 #submit {
    padding: 10px 20px;
-   background-color: #8b5a2b; /* Оранжевый цвет */
+   background-color: 698269; /* Оранжевый цвет */
    border: none;
    border-radius: 4px;
    color: white;
@@ -120,24 +122,47 @@ header {
 }
 
 #submit:hover {
-   background-color: #d88f00; /* Темный оранжевый при наведении */
+   background-color:  #f5deb4; /* Темный оранжевый при наведении */
+   color: #698269;
+}
+
+h1 {
+ color: #f5deb4;
+ font-size: 28px;
 }
 
 h2 {
- color: #d88f00;
+   color: #B99B6B;
+   font-size: 28px;
 }
 
 h4 {
-  color:  #079874; 
+   font-size: 24px;
+  color:  #698269;
+text-shadow: 2px 2px 5px black;
 }
 
 p {
- color:  #8b5a2b; 
+ color:#f5deb4;
 }
 
 #email {
- color: #8b5a2b; 
+ color: #f5deb4; 
 }
+
+input[type="email"] {
+   background-color: #f5deb4; /* Цвет фона */
+   border: 2px solid #f5deb4; /* Цвет рамки */
+   padding: 10px;
+   border-radius: 5px;
+}
+
+   input[type="email"]:focus {
+      background-color: #698269; /* Белый фон при вводе */
+      border-color: #B99B6B; /* Оранжевая рамка при фокусе */
+      outline: none;
+     
+   }
 
 #why-us {
    display: flex;
@@ -156,6 +181,10 @@ p {
 
 #video {
    margin-top: 30px; /* Добавляет расстояние перед видео */
+   border: 5px solid #f5deb4; /* Оранжевая рамка */
+   border-radius: 12px; /* Скругление углов */
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+   transition: transform 0.3s ease-in-out; /* Плавный эффект */
 }
 
 #collection {
@@ -177,6 +206,8 @@ p {
    margin-bottom: 20px;
    padding: 10px;
    gap: 20px;
+   color: #F1DBBF;
+   box-shadow: 2px 2px 2px black;
 }
 
 #product2 {
@@ -191,6 +222,9 @@ p {
    margin-bottom: 20px;
    padding: 10px;
    gap: 20px;
+   background-color: #AA5656;;
+   color: #F1DBBF;
+   box-shadow: 2px 2px 2px black;
 }
 
 #product3 {
@@ -205,17 +239,123 @@ p {
    margin-bottom: 20px;
    padding: 10px;
    gap: 20px;
+   background-color: #AA5656;;
+   color: #F1DBBF;
+   box-shadow: 2px 2px 2px black;
 }
 
 .product-image {
  width: 100px;
+ border: 5px solid #f5deb4; /* Оранжевая рамка */
+ border-radius: 12px; /* Скругление углов */
+ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+ transition: transform 0.3s ease-in-out; /* Плавный эффект */
+}
+
+#product1, #product2, #product3 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between; /* Равномерное распределение пространства */
+   width: calc(100% / 3);
+   margin: 10px;
+   border: 1px solid #000;
+   border-radius: 3px;
+   padding: 20px;
+   gap: 20px;
+   background-color: #AA5656;
+   color: #F1DBBF;
+   box-shadow: 2px 2px 2px black;
+ 
+}
+
+#collection {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: stretch; /* Растягивает карточки */
+}
+
+#collection > div {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 300px;
+   height: 550px; /* Одинаковая высота */
+   padding: 20px;
+   border: 1px solid #000;
+   border-radius: 10px;
+   background-color: #AA5656;
+   color: #F1DBBF;
+   box-shadow: 2px 2px 2px black;
+   overflow: hidden; /* Ограничиваем контент внутри карточки */
+}
+
+#collection img {
+   max-width: 100%;
+   height: 150px; /* Одинаковая высота изображений */
+   object-fit: cover; /* Подгоняет картинку */
+}
+
+#collection ul {
+   flex-grow: 1; /* Заполняет все свободное пространство */
+   padding: 0;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center; /* Центрирует текст */
+   overflow: auto; /* Добавляет скролл, если контент слишком длинный */
+   text-align: center;
+   max-height: 200px; /* Ограничиваем высоту списка */
+}
+
+#collection button {
+   margin-top: auto; /* Прижимает кнопку вниз */
+   align-self: center; /* Центрирует кнопку */
+}
+
+.btn {
+   padding: 10px 20px;
+   background-color: #698269;
+   border: none;
+   border-radius: 4px;
+   color: white;
+   cursor: pointer;
+   font-size: 16px;
+   text-transform: uppercase;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+   background-color: #f5deb4;
+   color: #698269;
+}
+
+.product-image {
+   max-width: 100%;
+   height: 150px; /* Одинаковая высота изображений */
+   object-fit: cover; /* Подгоняет картинку */
+}
+
+#collection h2 {
+   margin-top: auto; /* Прижимает цену вниз */
+   text-align: center; /* Выравнивает по центру */
+}
+
+.price-and-button {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: auto; /* Отталкивает вверх остальной контент */
 }
 
 footer {
    margin-top: 30px;
-   background-color: #8b5a2b;
+   background-color: #698269;
    padding: 20px;
    color: #f5deb3;
+   border-top: 3px solid #f5deb3;
 }
 
 footer > ul {
@@ -223,6 +363,7 @@ footer > ul {
    justify-content: flex-end;
    gap: 10px;
     list-style: none; 
+   
 }
 
 #contact {
@@ -232,6 +373,12 @@ color: #f5deb3;
 a {
 color: #f5deb3;
 }
+
+footer a {
+   text-decoration: none;
+}
+
+
 
 span {
 display: flex;
